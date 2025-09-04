@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_458312723978c5ea600fff266778b483 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_458312723978c5ea600fff266778b483" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_458312723978c5ea600fff266778b483 = L.map(
+                "map_458312723978c5ea600fff266778b483",
+                {
+                    center: [54.0, -2.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39f42f0b78aaf23d2f8d7ca991ccbdab = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_39f42f0b78aaf23d2f8d7ca991ccbdab.addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var marker_f84136abf6d36b3d7a4f5e18ce2f1aea = L.marker(
+                [57.0, -4.0],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_9ae524e7080364589a0788235d662fe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3230483552adfdcc2cb849caa5ca457 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_755cbad7c64e83914ab2d09a9a77ad5d = $(`<div id="html_755cbad7c64e83914ab2d09a9a77ad5d" style="width: 100.0%; height: 100.0%;">Scotland<br>Avg Load: 3000.00 MW<br>Avg Gen: 6595.33 MW</div>`)[0];
+                popup_f3230483552adfdcc2cb849caa5ca457.setContent(html_755cbad7c64e83914ab2d09a9a77ad5d);
+            
+        
+
+        marker_f84136abf6d36b3d7a4f5e18ce2f1aea.bindPopup(popup_f3230483552adfdcc2cb849caa5ca457)
+        ;
+
+        
+    
+    
+            marker_f84136abf6d36b3d7a4f5e18ce2f1aea.bindTooltip(
+                `<div>
+                     Scotland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f84136abf6d36b3d7a4f5e18ce2f1aea.setIcon(icon_9ae524e7080364589a0788235d662fe0);
+            
+    
+            var marker_80bb2b8f03e2e0eccb462af431c05c89 = L.marker(
+                [55.0, -2.0],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_d2983baf06a9e9b0c1a28def9f3a7b7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e698376b427aeec2f1abd21da4e3adf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2501d67025684ff7493c7dec2b89055e = $(`<div id="html_2501d67025684ff7493c7dec2b89055e" style="width: 100.0%; height: 100.0%;">North England<br>Avg Load: 5000.00 MW<br>Avg Gen: 4501.44 MW</div>`)[0];
+                popup_3e698376b427aeec2f1abd21da4e3adf.setContent(html_2501d67025684ff7493c7dec2b89055e);
+            
+        
+
+        marker_80bb2b8f03e2e0eccb462af431c05c89.bindPopup(popup_3e698376b427aeec2f1abd21da4e3adf)
+        ;
+
+        
+    
+    
+            marker_80bb2b8f03e2e0eccb462af431c05c89.bindTooltip(
+                `<div>
+                     North England
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80bb2b8f03e2e0eccb462af431c05c89.setIcon(icon_d2983baf06a9e9b0c1a28def9f3a7b7f);
+            
+    
+            var marker_3dc452dd0c9b3fe5a8395b2784a39f07 = L.marker(
+                [52.5, -1.5],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_283f529673f3f2eed52b7eb2b974ee92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c138e532976397f25e94d7342bf9fb11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c010439901ea2da5cf1b401cfd33d39 = $(`<div id="html_3c010439901ea2da5cf1b401cfd33d39" style="width: 100.0%; height: 100.0%;">Midlands<br>Avg Load: 5000.00 MW<br>Avg Gen: 4141.15 MW</div>`)[0];
+                popup_c138e532976397f25e94d7342bf9fb11.setContent(html_3c010439901ea2da5cf1b401cfd33d39);
+            
+        
+
+        marker_3dc452dd0c9b3fe5a8395b2784a39f07.bindPopup(popup_c138e532976397f25e94d7342bf9fb11)
+        ;
+
+        
+    
+    
+            marker_3dc452dd0c9b3fe5a8395b2784a39f07.bindTooltip(
+                `<div>
+                     Midlands
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3dc452dd0c9b3fe5a8395b2784a39f07.setIcon(icon_283f529673f3f2eed52b7eb2b974ee92);
+            
+    
+            var marker_5dcb30d9cc43411188f080021b331353 = L.marker(
+                [52.0, -3.5],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_ab82fb611238965ed29a97f22c1d445a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df3636e12a5c44765089f8ac2420c623 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e0e8af1ab17cef75c0639f682e62e99 = $(`<div id="html_9e0e8af1ab17cef75c0639f682e62e99" style="width: 100.0%; height: 100.0%;">Wales<br>Avg Load: 2000.00 MW<br>Avg Gen: 2583.88 MW</div>`)[0];
+                popup_df3636e12a5c44765089f8ac2420c623.setContent(html_9e0e8af1ab17cef75c0639f682e62e99);
+            
+        
+
+        marker_5dcb30d9cc43411188f080021b331353.bindPopup(popup_df3636e12a5c44765089f8ac2420c623)
+        ;
+
+        
+    
+    
+            marker_5dcb30d9cc43411188f080021b331353.bindTooltip(
+                `<div>
+                     Wales
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5dcb30d9cc43411188f080021b331353.setIcon(icon_ab82fb611238965ed29a97f22c1d445a);
+            
+    
+            var marker_f44f40ec21c2fb3d26b5cb41de2b7df8 = L.marker(
+                [51.0, -3.0],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_9c672b190b6ee231d61192003a8e2921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78d9ce006b8a6b347191c7e68afeda6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44cfcf0b046c8d473089d0e6e525f512 = $(`<div id="html_44cfcf0b046c8d473089d0e6e525f512" style="width: 100.0%; height: 100.0%;">South West England<br>Avg Load: 3000.00 MW<br>Avg Gen: 5246.05 MW</div>`)[0];
+                popup_78d9ce006b8a6b347191c7e68afeda6d.setContent(html_44cfcf0b046c8d473089d0e6e525f512);
+            
+        
+
+        marker_f44f40ec21c2fb3d26b5cb41de2b7df8.bindPopup(popup_78d9ce006b8a6b347191c7e68afeda6d)
+        ;
+
+        
+    
+    
+            marker_f44f40ec21c2fb3d26b5cb41de2b7df8.bindTooltip(
+                `<div>
+                     South West England
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f44f40ec21c2fb3d26b5cb41de2b7df8.setIcon(icon_9c672b190b6ee231d61192003a8e2921);
+            
+    
+            var marker_f35d26960363517b965cad10ab7d076a = L.marker(
+                [51.0, 0.0],
+                {
+}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            var icon_26c151582f24f652cb3b6c9d6b0a7e52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_002ad66e2e6a01e6023dcbfe9c10d598 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55bb4b1faa3287527ee080983a303737 = $(`<div id="html_55bb4b1faa3287527ee080983a303737" style="width: 100.0%; height: 100.0%;">South East England<br>Avg Load: 10000.00 MW<br>Avg Gen: 4932.16 MW</div>`)[0];
+                popup_002ad66e2e6a01e6023dcbfe9c10d598.setContent(html_55bb4b1faa3287527ee080983a303737);
+            
+        
+
+        marker_f35d26960363517b965cad10ab7d076a.bindPopup(popup_002ad66e2e6a01e6023dcbfe9c10d598)
+        ;
+
+        
+    
+    
+            marker_f35d26960363517b965cad10ab7d076a.bindTooltip(
+                `<div>
+                     South East England
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f35d26960363517b965cad10ab7d076a.setIcon(icon_26c151582f24f652cb3b6c9d6b0a7e52);
+            
+    
+            var poly_line_15243b2c252ffb183136d60fc9754908 = L.polyline(
+                [[57.0, -4.0], [55.0, -2.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_15243b2c252ffb183136d60fc9754908.bindTooltip(
+                `<div>
+                     Line: Scotland-North<br>Avg Flow: 3595.33 MW (Scotland -> North England)<br>Capacity: 6000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0e21007ea6e98405340347d461eba25f = L.polyline(
+                [[55.0, -2.0], [52.5, -1.5]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_0e21007ea6e98405340347d461eba25f.bindTooltip(
+                `<div>
+                     Line: North-Midlands<br>Avg Flow: 2077.57 MW (North England -> Midlands)<br>Capacity: 5000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b526bdab21202d0daee9b83135c69403 = L.polyline(
+                [[52.5, -1.5], [51.0, 0.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_b526bdab21202d0daee9b83135c69403.bindTooltip(
+                `<div>
+                     Line: Midlands-South East<br>Avg Flow: 2277.09 MW (Midlands -> South East England)<br>Capacity: 5000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b6eff2ddc73cb903edac05aee7459d71 = L.polyline(
+                [[55.0, -2.0], [52.0, -3.5]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_b6eff2ddc73cb903edac05aee7459d71.bindTooltip(
+                `<div>
+                     Line: North-Wales<br>Avg Flow: 1019.20 MW (North England -> Wales)<br>Capacity: 3000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8ac42513808115ee9a0b23e86fcf4e67 = L.polyline(
+                [[52.0, -3.5], [52.5, -1.5]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_8ac42513808115ee9a0b23e86fcf4e67.bindTooltip(
+                `<div>
+                     Line: Wales-Midlands<br>Avg Flow: 1058.37 MW (Wales -> Midlands)<br>Capacity: 3000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dfeb7ae8f7f14d9f9fc5e3de173c4da9 = L.polyline(
+                [[52.0, -3.5], [51.0, -3.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_dfeb7ae8f7f14d9f9fc5e3de173c4da9.bindTooltip(
+                `<div>
+                     Line: Wales-South West<br>Avg Flow: 544.71 MW (Wales -> South West England)<br>Capacity: 4000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ba17c142c94b19ac3aef56f9ad657468 = L.polyline(
+                [[51.0, -3.0], [51.0, 0.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_458312723978c5ea600fff266778b483);
+        
+    
+            poly_line_ba17c142c94b19ac3aef56f9ad657468.bindTooltip(
+                `<div>
+                     Line: South West-South East<br>Avg Flow: 2790.75 MW (South West England -> South East England)<br>Capacity: 5000.00 MW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
